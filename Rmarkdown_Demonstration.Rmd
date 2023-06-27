@@ -1,0 +1,66 @@
+--- 
+header-includes:
+    \usepackage{graphicx}
+    \usepackage{titling}
+    \usepackage{float}
+    \floatplacement{figure}{H}
+output: 
+  pdf_document:
+    
+    includes:
+      before_body: capa.sty
+    keep_tex: yes
+    number_sections: yes
+    toc: yes
+    toc_depth: 2
+  word_document:
+    toc: yes
+    toc_depth: '2'
+fontsize: 11pt # Fonte padrão
+toc-title: "Conteúdo" #Sumário
+---
+
+
+```{r setup, include=FALSE}
+
+# Chunks são partes do arquivos em que po R é aceito.
+# Onde não há chunks como este, o R processa LATEX
+
+library(knitr)# biblioteca para incluir imagens
+
+knitr::opts_chunk$set(echo = TRUE)
+
+
+```
+
+\newpage 
+
+
+# Primeiro tópico
+
+texto texto texto texto texto texto texto texto texto texto texto textotexto texto texto texto texto texto texto texto texto texto texto textotexto texto texto texto texto texto texto texto texto texto texto textotexto texto texto texto texto texto texto texto texto texto texto textotexto texto texto texto texto texto texto texto texto texto texto textotexto texto texto texto texto texto texto texto texto texto texto textotexto texto texto texto texto texto texto texto texto texto texto textotexto texto texto texto texto texto texto texto texto texto texto textotexto texto texto texto texto texto texto texto texto texto texto texto
+
+# É possível adicionar imagens também.
+
+```{r echo=FALSE, out.width = "80%", fig.align='center', fig.cap='Image por Mohamed Hassan'}
+
+include_graphics("panico caos medo.jpg")
+```
+
+Garanta que a imagem está no mesmo diretório que o rmarkdown está. 
+O que facilita bastante a vida é criar um projeto no R e nele você faz tudo o que precisa fazer sobre um determinado trabalho/matéria.
+
+# Garanta que tem o LATEX no seu computador
+
+O próprio R te dá o link de onde baixar
+
+texto texto texto texto texto texto texto texto texto texto texto textotexto texto texto texto texto texto texto texto texto texto texto textotexto texto texto texto texto texto texto texto texto texto texto textotexto texto texto texto texto texto texto texto texto texto texto textotexto texto texto texto texto texto texto texto texto texto texto textotexto texto texto texto texto texto texto texto texto texto texto textotexto texto texto texto texto texto texto texto texto texto texto textotexto texto texto texto texto texto texto texto texto texto texto textotexto texto texto texto texto texto texto texto texto texto texto texto
+
+# É sobre isso
+
+texto texto texto texto texto texto texto texto texto texto texto textotexto texto texto texto texto texto texto texto texto texto texto textotexto texto texto texto texto texto texto texto texto texto texto textotexto texto texto texto texto texto texto texto texto texto texto textotexto texto texto texto texto texto texto texto texto texto texto textotexto texto texto texto texto texto texto texto texto texto texto textotexto texto texto texto texto texto texto texto texto texto texto textotexto texto texto texto texto texto texto texto texto texto texto textotexto texto texto texto texto texto texto texto texto texto texto texto
+
+
+# E tá tudo bem
+
+texto texto texto texto texto texto texto texto texto texto texto textotexto texto texto texto texto texto texto texto texto texto texto textotexto texto texto texto texto texto texto texto texto texto texto textotexto texto texto texto texto texto texto texto texto texto texto textotexto texto texto texto texto texto texto texto texto texto texto textotexto texto texto texto texto texto texto texto texto texto texto textotexto texto texto texto texto texto texto texto texto texto texto textotexto texto texto texto texto texto texto texto texto texto texto textotexto texto texto texto texto texto texto texto texto texto texto texto
